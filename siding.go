@@ -34,7 +34,7 @@ func ReadResponse(resp *http.Response) (html string, err error) {
 Siding class
 */
 type Siding struct {
-	username, password string
+	Username, Password string
 	client             *http.Client
 	// cookies            []*http.Cookie
 }
@@ -100,8 +100,8 @@ func (s Siding) sessionCookie() *http.Cookie {
 func (s Siding) postArguments() url.Values {
 	// "login={0}&passwd={1}&sw=&sh=&cd="
 	return url.Values{
-		"login":  {s.username},
-		"passwd": {s.password},
+		"login":  {s.Username},
+		"passwd": {s.Password},
 		"sw":     {""},
 		"sh":     {""},
 		"cd":     {""},

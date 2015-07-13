@@ -18,7 +18,7 @@ func init() {
 }
 
 func ValidSession() *Siding {
-	return &Siding{username: username, password: password}
+	return &Siding{Username: username, Password: password}
 }
 
 func VerifySession(siding *Siding, t *testing.T) {
