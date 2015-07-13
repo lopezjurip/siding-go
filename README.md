@@ -35,5 +35,10 @@ func main() {
 
 	fmt.Println(html)
 }
+```
 
+## Testing
+
+```sh
+go test --user USERNAME -pass PASSWORD
 ```
